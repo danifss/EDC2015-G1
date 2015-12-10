@@ -14,6 +14,10 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <!-- Bootstrap files -->
+    <link href="~/Content/bootstrap.min.paper.css" rel="stylesheet" type="text/css" />
+    <script src="~/Content/bootstrap.min.js"></script>
+
 </head>
 <body>
     <form runat="server">
