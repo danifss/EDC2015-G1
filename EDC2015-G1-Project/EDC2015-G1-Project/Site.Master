@@ -80,11 +80,11 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
-        </div>
+        </div>                
+        <footer>
+            <p style="text-align:center">&copy; <%: DateTime.Now.Year %> - Daniel Silva & João Cravo</p>
+        </footer>
+
     </form>
 </body>
 </html>
