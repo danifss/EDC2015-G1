@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result request="/sas/ementas" request_timestamp="1449785494">
+  <menus zone="santiago" type="day">
+    <menu canteen="Refeitório de Santiago" meal="Almoço" date="Thu, 10 Dec 2015 12:00:02 +0000" weekday="Thursday" weekdayNr="4" disabled="0">
+      <items>
+        <item name="Sopa">Creme de abóbora</item>
+        <item name="Prato normal carne">Frango à passarinho e massa esparguete</item>
+        <item name="Prato normal peixe"/>
+        <item name="Prato dieta">Frango cozido com arroz e cenoura</item>
+        <item name="Prato vegetariano"/>
+        <item name="Prato opção">Maruca ensopada com puré de batata</item>
+        <item name="Salada">Buffet de saladas</item>
+        <item name="Diversos">Pão de mistura</item>
+        <item name="Sobremesa">Fruta da época ou doce</item>
+        <item name="Bebida">Água mineral</item>
+      </items>
+    </menu>
+    <menu canteen="Refeitório de Santiago" meal="Jantar" date="Thu, 10 Dec 2015 12:00:02 +0000" weekday="Thursday" weekdayNr="4" disabled="0">
+      <items>
+        <item name="Sopa">Creme de abóbora</item>
+        <item name="Prato normal carne"/>
+        <item name="Prato normal peixe">Pataniscas de bacalhau com arroz de tomate</item>
+        <item name="Prato dieta"/>
+        <item name="Prato vegetariano">Alho francês à braz</item>
+        <item name="Prato opção"/>
+        <item name="Salada">Buffet de saladas</item>
+        <item name="Diversos">Pão de mistura</item>
+        <item name="Sobremesa">Fruta da época ou doce</item>
+        <item name="Bebida"/>
+      </items>
+    </menu>
+    <menu canteen="Refeitório do Crasto" meal="Almoço" date="Thu, 10 Dec 2015 12:00:02 +0000" weekday="Thursday" weekdayNr="4" disabled="0">
+      <items>
+        <item name="Sopa">Creme de legumes</item>
+        <item name="Prato normal carne"/>
+        <item name="Prato normal peixe">Bacalhau com natas</item>
+        <item name="Prato dieta">Bolonhesa de soja</item>
+        <item name="Prato vegetariano"/>
+        <item name="Prato opção">Fruta da época ou doce</item>
+        <item name="Salada">Buffet de saladas</item>
+        <item name="Diversos">Carne de vaca estufada com massa esparguete</item>
+        <item name="Sobremesa">Pão de mistura</item>
+      </items>
+    </menu>
+    <menu canteen="Refeitório do Crasto" meal="Jantar" date="Thu, 10 Dec 2015 12:00:02 +0000" weekday="Thursday" weekdayNr="4" disabled="Encerrado - refeições servidas no refeitório de santiago">
+      <items/>
+    </menu>
+    <menu canteen="Snack-Bar/Self" meal="Almoço" date="Thu, 10 Dec 2015 12:00:02 +0000" weekday="Thursday" weekdayNr="4" disabled="0">
+      <items>
+        <item name="Sopa">Creme de legumes</item>
+        <item name="Prato de carne">Carne de vaca estufada com massa esparguete</item>
+        <item name="Prato de peixe">Bacalhau com natas</item>
+        <item name="Salada">Buffet de saladas</item>
+        <item name="Diversos">Pão de mistura</item>
+        <item name="Sobremesa">Fruta da época ou doce</item>
+        <item name="Bebida"/>
+      </items>
+    </menu>
+  </menus>
+
+  <menus zone="estga" type="day">
+    <menu canteen="Refeitório ESTGA" meal="Almoço" date="Thu, 10 Dec 2015 12:00:04 +0000" weekday="Thursday" weekdayNr="4" disabled="0">
+      <items>
+        <item name="Sopa">Espinafres</item>
+        <item name="Prato carne">Frango assado com massa à carbonara</item>
+        <item name="Prato peixe">Carapau grelhado com molho verde</item>
+        <item name="Prato dieta">Frango cozido com massa</item>
+        <item name="Buffet de saladas">Saladas variadas</item>
+        <item name="Diversos">Pão de mistura</item>
+        <item name="Sobremesa">Fruta da época ou iogurte</item>
+        <item name="Bebidas">Água mineral</item>
+      </items>
+    </menu>
+    <menu canteen="Refeitório ESTGA" meal="Jantar" date="Thu, 10 Dec 2015 12:00:04 +0000" weekday="Thursday" weekdayNr="4" disabled="0">
+      <items>
+        <item name="Sopa">Espinafres</item>
+        <item name="Prato carne"/>
+        <item name="Prato peixe">Fritada mista de peixe com salada de feijão frade</item>
+        <item name="Prato dieta">Abrótea cozida com todos</item>
+        <item name="Buffet de saladas">Saladas variadas</item>
+        <item name="Diversos">Pão de mistura</item>
+        <item name="Sobremesa">Fruta da época ou iogurte</item>
+        <item name="Bebidas">Água mineral</item>
+      </items>
+    </menu>
+  </menus>
+
+  <menus zone="esan" type="day">
+    <menu canteen="Refeitório ESAN" meal="Almoço" date="Thu, 10 Dec 2015 12:00:04 +0000" weekday="Thursday" weekdayNr="4" disabled="0">
+      <items>
+        <item name="Sopa">Grão com hortaliça</item>
+        <item name="Prato carne">Rojões com laranja e batata corada</item>
+        <item name="Prato dieta">Salmão grelhado e batata cozida</item>
+        <item name="Prato peixe">Salmão grelhado e batata cozida</item>
+        <item name="Buffet de saladas">Saladas diversas</item>
+        <item name="Diversos">Pão de mistura</item>
+        <item name="Sobremesa">Fruta da época ou doce</item>
+        <item name="Bebidas">Água mineral</item>
+      </items>
+    </menu>
+    <menu canteen="Refeitório ESAN" meal="Jantar" date="Thu, 10 Dec 2015 12:00:04 +0000" weekday="Thursday" weekdayNr="4" disabled="Não são servidas refeições">
+      <items/>
+    </menu>
+  </menus>
+
+  <menus zone="rest" type="day">
+    <menu canteen="Restaurante Universitário" meal="Almoço" date="Thu, 10 Dec 2015 12:00:04 +0000" weekday="Thursday" weekdayNr="4" disabled="0">
+      <items>
+        <item name="Sopa">Creme de abóbora</item>
+        <item name="Prato de carne">Perna de frango assada</item>
+        <item name="Prato de peixe">Feijoada de chocos</item>
+        <item name="Buffet de entradas">Buffet de entradas variadas</item>
+        <item name="Buffet de saladas">Buffet de saladas variadas</item>
+        <item name="Buffet de sobremesas">Buffet de sobremesas variadas</item>
+      </items>
+    </menu>
+  </menus>
+</result>

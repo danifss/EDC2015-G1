@@ -60,8 +60,8 @@
                         <li class="dropdown">
                             <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ementas <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a runat="server" href="#">Ementa do Dia</a></li>
-                                <li><a runat="server" href="#">Ementa da Semana</a></li>
+                                <li><a runat="server" href="~/menuDay">Ementa do Dia</a></li>
+                                <li><a runat="server" href="~/menuWeek">Ementa da Semana</a></li>
                                 <li class="divider" style="margin:10px 0px;"></li>
                                 <li><a runat="server" href="#">Refeit&oacute;rio de Santiago</a></li>
                                 <li><a runat="server" href="#">Refeit&oacute;rio do Crasto</a></li>
