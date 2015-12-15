@@ -174,12 +174,39 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="esan.aspx" />
+    <Content Include="estga.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="Img\aveiro1.jpg" />
+    <Content Include="Img\crasto.jpg" />
+    <Content Include="Img\esan.jpg" />
+    <Content Include="Img\esan2.jpg" />
+    <Content Include="Img\estga.jpg" />
+    <Content Include="Img\refeitorioCrasto.jpg" />
+    <Content Include="Img\refeitorioEstga.jpg" />
+    <Content Include="Img\refeitorioSantiago.jpg" />
+    <Content Include="Img\refeitorioSnack.jpg" />
+    <Content Include="Img\restauranteUniversitario.jpg" />
+    <Content Include="Img\santiago.jpg" />
+    <Content Include="Img\snack.jpg" />
+    <Content Include="Img\universitario.jpg" />
+    <Content Include="menuDay.aspx" />
+    <Content Include="menuWeek.aspx" />
+    <Content Include="refeitorioCrasto.aspx" />
+    <Content Include="refeitorioSantiago.aspx" />
+    <Content Include="restauranteUniversitario.aspx" />
+    <Content Include="snackSelf.aspx" />
+    <Content Include="XML\ementas.day.all.xml" />
+    <Content Include="XML\ementas.week.all.xml" />
+    <Content Include="XML\ementas.xslt" />
+    <Content Include="XML\menuParse.xslt" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Img\campusUA.jpg" />
+    <Content Include="Img\sasua625x.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -225,6 +252,9 @@
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="XML\ementas.xsd">
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -358,11 +388,60 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="esan.aspx.cs">
+      <DependentUpon>esan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="esan.aspx.designer.cs">
+      <DependentUpon>esan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estga.aspx.cs">
+      <DependentUpon>estga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="estga.aspx.designer.cs">
+      <DependentUpon>estga.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="menuDay.aspx.cs">
+      <DependentUpon>menuDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menuDay.aspx.designer.cs">
+      <DependentUpon>menuDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menuWeek.aspx.cs">
+      <DependentUpon>menuWeek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menuWeek.aspx.designer.cs">
+      <DependentUpon>menuWeek.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="refeitorioCrasto.aspx.cs">
+      <DependentUpon>refeitorioCrasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="refeitorioCrasto.aspx.designer.cs">
+      <DependentUpon>refeitorioCrasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="refeitorioSantiago.aspx.cs">
+      <DependentUpon>refeitorioSantiago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="refeitorioSantiago.aspx.designer.cs">
+      <DependentUpon>refeitorioSantiago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="restauranteUniversitario.aspx.cs">
+      <DependentUpon>restauranteUniversitario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="restauranteUniversitario.aspx.designer.cs">
+      <DependentUpon>restauranteUniversitario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -376,6 +455,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="snackSelf.aspx.cs">
+      <DependentUpon>snackSelf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="snackSelf.aspx.designer.cs">
+      <DependentUpon>snackSelf.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">

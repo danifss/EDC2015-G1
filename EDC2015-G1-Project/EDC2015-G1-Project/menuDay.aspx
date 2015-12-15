@@ -39,8 +39,7 @@
                         </Fields>
                     </asp:DetailsView>--%>
 
-                    <asp:FormView  CssClass="table table-striped table-hover table-condensed" ID="FormViewSantiago" runat="server">
-
+                    <asp:FormView  CssClass="table table-striped table-hover table-condensed" ID="FormViewSantiago" runat="server" OnLoad="FormViewSantiago_Load">
                     </asp:FormView>
 
 <%--                    <ItemTemplate>
@@ -56,14 +55,14 @@
         </div>
 
 
-        <div class="tab-pane fade" id="crasto">
+       <div class="tab-pane fade" id="crasto">
             <p>crasto</p>
-        </div>
+                </div>
         
         
         <div class="tab-pane fade" id="rest">
             <p>rest</p>
-        </div>
+                </div>
         
         
         <div class="tab-pane fade" id="snack">
