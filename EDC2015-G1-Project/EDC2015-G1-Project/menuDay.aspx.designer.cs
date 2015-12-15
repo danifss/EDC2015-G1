@@ -13,13 +13,13 @@ namespace EDC2015_G1_Project {
     public partial class menuDay {
         
         /// <summary>
-        /// FormViewSantiago control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView FormViewSantiago;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
         /// ementasByDay control.

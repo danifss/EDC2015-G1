@@ -3,9 +3,24 @@
     xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl"
 >
   <xsl:output method="xml" indent="yes"/>
-  
+
   <xsl:template match="/result">
-    <xsl:value-of select="menus/menu/@meal" />
+    <itens>
+      <xsl:apply-templates select="/result/menus/menu/items" />
+    </itens>
+  </xsl:template>
+  
+  
+  <xsl:template match="items">
+    <item>
+      <xsl:attribute name="cantina">
+        <xsl:value-of select="../@canteen"/>
+      </xsl:attribute>
+      
+      <xsl:attribute name="sopa">
+        <xsl:value-of select="item[@name='Sopa']" />
+      </xsl:attribute>
+    </item>
   </xsl:template>
 
 </xsl:stylesheet>

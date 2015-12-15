@@ -7,10 +7,20 @@
     <result>
       <xsl:for-each select="menus">
         <menus>
+          <zona>
+            <xsl:attribute name="zona">
+              <xsl:value-of select="@zone"/>
+            </xsl:attribute>
+          </zona>
+          <type>
+            <xsl:attribute name="type">
+              <xsl:value-of select="@type"/>
+            </xsl:attribute>
+          </type>
           <xsl:for-each select="menu">
             <menu>
-              <xsl:attribute name="item">
-                <xsl:value-of select="items/item"/>
+              <xsl:attribute name="canteen">
+                <xsl:value-of select="@canteen"/>
               </xsl:attribute>
             </menu>
           </xsl:for-each>

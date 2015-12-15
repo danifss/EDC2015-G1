@@ -18,34 +18,13 @@
         <div class="tab-pane fade active in" id="santiago">
             <div class="row">
                 <div class="col-xs-8">
-<%--                    <table class="table table-striped table-condensed table-hover">
-                        <thead>
-                            <tr class="btn-success">
-                                <th>Prato</th>
-                                <th>Ementa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Column content</td>
-                            </tr>
-                        </tbody>
-                    </table>--%>
 
-<%--                    <asp:DetailsView ID="DetailsViewsSantiago" runat="server" DataSourceID="ementasByDay" CssClass="table table-striped table-condensed table-hover" AutoGenerateRows="False">
-                        <Fields>
-                            <asp:BoundField DataField="item" HeaderText="item" SortExpression="item" />
-                        </Fields>
-                    </asp:DetailsView>--%>
-
-                    <asp:FormView  CssClass="table table-striped table-hover table-condensed" ID="FormViewSantiago" runat="server" OnLoad="FormViewSantiago_Load">
-                    </asp:FormView>
-
-<%--                    <ItemTemplate>
-                            Item
-                            <asp:Label ID="zone" runat="server" Text='<%# Bind("meal") %>' /><br />
-                        </ItemTemplate>--%>
+                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-striped table-hover table-condensed" AutoGenerateColumns="False" DataSourceID="ementasByDay">
+                        <Columns>
+                            <asp:BoundField DataField="cantina" HeaderText="cantina" SortExpression="cantina" />
+                            <asp:BoundField DataField="sopa" HeaderText="sopa" SortExpression="sopa" />
+                        </Columns>
+                    </asp:GridView>
 
                 </div>
                 <div class="col-xs-4">
@@ -55,26 +34,26 @@
         </div>
 
 
-       <div class="tab-pane fade" id="crasto">
+        <div class="tab-pane fade" id="crasto">
             <p>crasto</p>
-                </div>
-        
-        
+        </div>
+
+
         <div class="tab-pane fade" id="rest">
             <p>rest</p>
-                </div>
-        
-        
+        </div>
+
+
         <div class="tab-pane fade" id="snack">
             <p>snack</p>
         </div>
-        
-        
+
+
         <div class="tab-pane fade" id="estga">
             <p>estga</p>
         </div>
-        
-        
+
+
         <div class="tab-pane fade" id="esan">
             <p>esan</p>
         </div>
@@ -82,6 +61,6 @@
 
 
 
-    <asp:XmlDataSource ID="ementasByDay" runat="server" DataFile="~/XML/ementas.day.all.xml" TransformFile="~/XML/menuParse.xslt"></asp:XmlDataSource>
+    <asp:XmlDataSource ID="ementasByDay" runat="server" DataFile="~/XML/ementas.day.all.xml" TransformFile="~/XML/menuParse.xslt" />
 
 </asp:Content>
