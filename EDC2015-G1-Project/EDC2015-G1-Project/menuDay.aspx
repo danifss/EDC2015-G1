@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Menus for Day" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="menuDay.aspx.cs" Inherits="EDC2015_G1_Project.menuDay" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>Ementa do Dia</h1>
+
     <div class="jumbotron">
         <ul class="nav nav-tabs">
             <li class="active"><a href="#santiago" data-toggle="tab" aria-expanded="true">Santiago</a></li>
@@ -33,7 +33,7 @@
                         </tbody>
                     </table>--%>
 
-                   <%-- <asp:DetailsView ID="DetailsViewsSantiago" runat="server" DataSourceID="ementasByDay" CssClass="table table-striped table-condensed table-hover" AutoGenerateRows="False">
+<%--                    <asp:DetailsView ID="DetailsViewsSantiago" runat="server" DataSourceID="ementasByDay" CssClass="table table-striped table-condensed table-hover" AutoGenerateRows="False">
                         <Fields>
                             <asp:BoundField DataField="item" HeaderText="item" SortExpression="item" />
                         </Fields>
@@ -57,59 +57,31 @@
 
 
        <div class="tab-pane fade" id="crasto">
-            <div class="row">
-                <div class="col-xs-8">
+            <p>crasto</p>
                 </div>
-                <div class="col-xs-4">
-                    <img src="Img/crasto.jpg" width="100%" />
-                </div>
-            </div>
-        </div>
         
         
         <div class="tab-pane fade" id="rest">
-            <div class="row">
-                <div class="col-xs-8">
+            <p>rest</p>
                 </div>
-                <div class="col-xs-4">
-                    <img src="Img/universitario.jpg" width="100%" />
-                </div>
-            </div>
-        </div>
         
         
         <div class="tab-pane fade" id="snack">
-            <div class="row">
-                <div class="col-xs-8">
-                </div>
-                <div class="col-xs-4">
-                    <img src="Img/snack.jpg" width="100%" />
-                </div>
-            </div>
+            <p>snack</p>
         </div>
         
         
         <div class="tab-pane fade" id="estga">
-            <div class="row">
-                <div class="col-xs-8">
-                </div>
-                <div class="col-xs-4">
-                    <img src="Img/estga.jpg" width="100%" />
-                </div>
-            </div>
+            <p>estga</p>
         </div>
         
         
         <div class="tab-pane fade" id="esan">
-            <div class="row">
-                <div class="col-xs-8">
-                </div>
-                <div class="col-xs-4">
-                    <img src="Img/esan2.jpg" width="100%" />
-                </div>
-            </div>
+            <p>esan</p>
         </div>
     </div>
+
+
 
     <asp:XmlDataSource ID="ementasByDay" runat="server" DataFile="~/XML/ementas.day.all.xml" TransformFile="~/XML/menuParse.xslt"></asp:XmlDataSource>
 
