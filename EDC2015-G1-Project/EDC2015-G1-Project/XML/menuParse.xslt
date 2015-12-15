@@ -3,8 +3,9 @@
     xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl"
 >
   <xsl:output method="xml" indent="yes"/>
-  <xsl:template match="/result/menus/menu">
-    <xsl:value-of select="@meal" />
+  
+  <xsl:template match="/result">
+    <xsl:value-of select="menus/menu/@meal" />
   </xsl:template>
 
 </xsl:stylesheet>

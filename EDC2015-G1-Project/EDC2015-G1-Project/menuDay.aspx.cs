@@ -10,27 +10,29 @@ namespace EDC2015_G1_Project
 {
     public partial class menuDay : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            XmlDocument xml = new XmlDocument();
-            xml.Load(@"~/XML/ementas.day.all.xml");
+        //protected void Page_Load(object sender, EventArgs e)
+        //{
+        //    XmlDocument xml = new XmlDocument();
+        //    xml.Load("http://services.web.ua.pt/sas/ementas?date=day");
 
-            List<string> attributes = new List<string>();
+        //    List<string> attributes = new List<string>();
 
-            List<XmlNode> nodes = new List<XmlNode>();
-            XmlNode node = xml.FirstChild;
-            foreach (XmlElement n in node.ChildNodes)
-            {
-                XmlAttributeCollection atributos = n.Attributes;
-                foreach (XmlAttribute at in atributos)
-                {
-                    if (at.LocalName.Contains("request"))
-                    {
-                        attributes.Add(at.Value);
-                    }
-                }
-            }
+        //    XmlNode node = xml.DocumentElement.SelectSingleNode("/result/menus");
+        //    if (node.Attributes["zone"].Value.Equals("santiago"))
+        //    {
+        //        foreach (XmlElement n in node.ChildNodes)
+        //        {
+        //            XmlAttributeCollection atributos = n.Attributes;
+        //            foreach (XmlAttribute at in atributos)
+        //            {
+        //                attributes.Add(at.Value);
+        //            }
+        //        }
+        //    }
 
-        }
+        //    FormViewSantiago.DataSource = attributes;
+        //    FormViewSantiago.DataBind();
+
+        //}
     }
 }
