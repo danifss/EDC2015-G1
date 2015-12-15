@@ -63,13 +63,13 @@
                                 <li><a runat="server" href="~/menuDay">Ementa do Dia</a></li>
                                 <li><a runat="server" href="~/menuWeek">Ementa da Semana</a></li>
                                 <li class="divider" style="margin:10px 0px;"></li>
-                                <li><a runat="server" href="#">Refeit&oacute;rio de Santiago</a></li>
-                                <li><a runat="server" href="#">Refeit&oacute;rio do Crasto</a></li>
-                                <li><a runat="server" href="#">Restaurante Universit&aacute;rio</a></li>
-                                <li><a runat="server" href="#">Snack-Bar/Self</a></li>
+                                <li><a runat="server" href="~/refeitorioSantiago">Refeit&oacute;rio de Santiago</a></li>
+                                <li><a runat="server" href="~/refeitorioCrasto">Refeit&oacute;rio do Crasto</a></li>
+                                <li><a runat="server" href="~/restauranteUniversitario">Restaurante Universit&aacute;rio</a></li>
+                                <li><a runat="server" href="~/snackSelf">Snack-Bar/Self</a></li>
                                 <li class="divider"></li>
-                                <li><a runat="server" href="#">ESTGA</a></li>
-                                <li><a runat="server" href="#">ESAN</a></li>
+                                <li><a runat="server" href="~/estga">ESTGA</a></li>
+                                <li><a runat="server" href="~/esan">ESAN</a></li>
                             </ul>
                         </li>
 
