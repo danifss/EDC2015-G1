@@ -203,6 +203,7 @@
     <Content Include="XML\ementas.day.all.xml" />
     <Content Include="XML\ementas.week.all.xml" />
     <Content Include="XML\ementas.xslt" />
+    <Content Include="XML\menuParse.xml" />
     <Content Include="XML\menuParse.xslt" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Img\campusUA.jpg" />

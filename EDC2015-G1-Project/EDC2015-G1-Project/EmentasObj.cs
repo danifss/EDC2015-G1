@@ -197,11 +197,11 @@ public partial class resultMenusMenuItemsItem
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.81.0")]
-[System.SerializableAttribute()]
+[System.SerializableAttribute]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [XmlTypeAttribute(AnonymousType = true)]
-[XmlRootAttribute(Namespace = "", IsNullable = false)]
+[XmlRootAttribute("result", Namespace = "", IsNullable = false)]
 public partial class NewDataSet
 {
 

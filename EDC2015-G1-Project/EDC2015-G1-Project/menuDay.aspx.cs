@@ -13,26 +13,28 @@ namespace EDC2015_G1_Project
 {
     public partial class menuDay : System.Web.UI.Page
     {
+        result ementas;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            string inputUrl = "http://services.web.ua.pt/sas/ementas?date=day&place=all";
+            ////string inputUrl = "http://services.web.ua.pt/sas/ementas?date=day&place=all";
             //string inputUrl = @"C:\ementas.day.all.xml";
-            XmlDocument xml = new XmlDocument();
-            xml.Load(inputUrl);
-            string inputString = xml.InnerXml;
-            //string xmlText = File.ReadAllText(inputUrl);
+            //XmlDocument xml = new XmlDocument();
+            //xml.Load(inputUrl);
+            //string inputString = xml.InnerXml;
+            ////string xmlText = File.ReadAllText(inputUrl);
 
-            try
-            {
-                XmlSerializer serializer = new XmlSerializer(typeof(NewDataSet));
-                StringReader rdr = new StringReader(inputString);
-                NewDataSet resultingMessage = (NewDataSet)serializer.Deserialize(rdr);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.StackTrace);
-                throw ex;
-            }
+            //try
+            //{
+            //    XmlSerializer serializer = new XmlSerializer(typeof(result));
+            //    StringReader rdr = new StringReader(inputString);
+            //    ementas = (result)serializer.Deserialize(rdr);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.StackTrace);
+            //    throw ex;
+            //}
         }
 
         protected void FormViewSantiago_Load(object sender, EventArgs e)
