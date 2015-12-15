@@ -388,6 +388,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EmentasObj.cs" />
     <Compile Include="esan.aspx.cs">
       <DependentUpon>esan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
