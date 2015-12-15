@@ -194,6 +194,7 @@
     <Content Include="Img\santiago.jpg" />
     <Content Include="Img\snack.jpg" />
     <Content Include="Img\universitario.jpg" />
+    <Content Include="marcarSenha.aspx" />
     <Content Include="menuDay.aspx" />
     <Content Include="menuWeek.aspx" />
     <Content Include="refeitorioCrasto.aspx" />
@@ -406,6 +407,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="marcarSenha.aspx.cs">
+      <DependentUpon>marcarSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="marcarSenha.aspx.designer.cs">
+      <DependentUpon>marcarSenha.aspx</DependentUpon>
     </Compile>
     <Compile Include="menuDay.aspx.cs">
       <DependentUpon>menuDay.aspx</DependentUpon>
