@@ -42,9 +42,9 @@
         <item name="Sobremesa">Pão de mistura</item>
       </items>
     </menu>
-    <menu canteen="Refeitório do Crasto" meal="Jantar" date="Thu, 10 Dec 2015 12:00:02 +0000" weekday="Thursday" weekdayNr="4" disabled="Encerrado - refeições servidas no refeitório de santiago">
+    <!--<menu canteen="Refeitório do Crasto" meal="Jantar" date="Thu, 10 Dec 2015 12:00:02 +0000" weekday="Thursday" weekdayNr="4" disabled="Encerrado - refeições servidas no refeitório de santiago">
       <items/>
-    </menu>
+    </menu>-->
     <menu canteen="Snack-Bar/Self" meal="Almoço" date="Thu, 10 Dec 2015 12:00:02 +0000" weekday="Thursday" weekdayNr="4" disabled="0">
       <items>
         <item name="Sopa">Creme de legumes</item>
@@ -98,9 +98,9 @@
         <item name="Bebidas">Água mineral</item>
       </items>
     </menu>
-    <menu canteen="Refeitório ESAN" meal="Jantar" date="Thu, 10 Dec 2015 12:00:04 +0000" weekday="Thursday" weekdayNr="4" disabled="Não são servidas refeições">
+    <!--<menu canteen="Refeitório ESAN" meal="Jantar" date="Thu, 10 Dec 2015 12:00:04 +0000" weekday="Thursday" weekdayNr="4" disabled="Não são servidas refeições">
       <items/>
-    </menu>
+    </menu>-->
   </menus>
 
   <menus zone="rest" type="day">

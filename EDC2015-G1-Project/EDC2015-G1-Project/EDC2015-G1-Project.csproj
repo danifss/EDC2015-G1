@@ -200,11 +200,55 @@
     <Content Include="refeitorioSantiago.aspx" />
     <Content Include="restauranteUniversitario.aspx" />
     <Content Include="snackSelf.aspx" />
-    <Content Include="XML\ementas.day.all.xml" />
+    <Content Include="Trans\almocoEsan.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Trans\almocoEstga.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Trans\almocoSnack.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Trans\almocoUniversitario.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Trans\almocoCrasto.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Trans\jantarEsan.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Trans\jantarEstga.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Trans\jantarSnack.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Trans\jantarUniversitario.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Trans\jantarCrasto.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Trans\jantarSantiago.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\ementas.day.all.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="XML\ementas.week.all.xml" />
-    <Content Include="XML\ementas.xslt" />
-    <Content Include="XML\menuParse.xml" />
-    <Content Include="XML\menuParse.xslt" />
+    <Content Include="XML\ementas.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Trans\almocoSantiago.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\menuParse.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Trans\menuParse.xslt">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Img\campusUA.jpg" />
     <Content Include="Img\sasua625x.jpg" />
