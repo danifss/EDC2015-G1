@@ -11,7 +11,7 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <!-- Bootstrap files -->
@@ -61,8 +61,7 @@
                             <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ementas <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a runat="server" href="~/menuDay">Ementa do Dia</a></li>
-                                <li><a runat="server" href="~/menuWeek">Ementa da Semana</a></li>
-                                <li class="divider" style="margin:10px 0px;"></li>
+                                <li class="divider" style="margin: 10px 0px;"></li>
                                 <li><a runat="server" href="~/refeitorioSantiago">Refeit&oacute;rio de Santiago</a></li>
                                 <li><a runat="server" href="~/refeitorioCrasto">Refeit&oacute;rio do Crasto</a></li>
                                 <li><a runat="server" href="~/restauranteUniversitario">Restaurante Universit&aacute;rio</a></li>
@@ -99,10 +98,11 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-        </div>                
-            <footer>
-            <p style="text-align:center">&copy; <%: DateTime.Now.Year %> - Daniel Silva & João Cravo</p>
-            </footer>
+        </div>
+        <footer>
+            <br />
+            <p style="text-align: center">&copy; <%: DateTime.Now.Year %> - Daniel Silva & João Cravo</p>
+        </footer>
 
     </form>
 </body>

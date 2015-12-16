@@ -9,8 +9,8 @@
       <xsl:apply-templates select="/result/menus/menu/items" />
     </itens>
   </xsl:template>
-  
-  
+
+
   <xsl:template match="items">
     <item>
       <xsl:attribute name="Cantina">
@@ -19,11 +19,11 @@
       <xsl:attribute name="Refeição">
         <xsl:value-of select="../@meal"/>
       </xsl:attribute>
-           
-        <xsl:attribute name="Sopa">
+
+      <xsl:attribute name="Sopa">
         <xsl:value-of select="item[@name='Sopa']" />
       </xsl:attribute>
-       <xsl:attribute name="PratoNormalCarne">
+      <xsl:attribute name="PratoNormalCarne">
         <xsl:value-of select="item[@name='Prato normal carne']" />
       </xsl:attribute>
       <xsl:attribute name="PratoNormalPeixe">
@@ -35,7 +35,7 @@
       <xsl:attribute name="PratoVegetariano">
         <xsl:value-of select="item[@name='Prato vegetariano']" />
       </xsl:attribute>
-       <xsl:attribute name="PratoOpçao">
+      <xsl:attribute name="PratoOpçao">
         <xsl:value-of select="item[@name='Prato opção']" />
       </xsl:attribute>
       <xsl:attribute name="Salada">
@@ -47,7 +47,7 @@
       <xsl:attribute name="Sobremesa">
         <xsl:value-of select="item[@name='Sobremesa']" />
       </xsl:attribute>
-       <xsl:attribute name="Bebida">
+      <xsl:attribute name="Bebida">
         <xsl:value-of select="item[@name='Bebida']" />
       </xsl:attribute>
     </item>

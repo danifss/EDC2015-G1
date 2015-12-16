@@ -17,7 +17,8 @@ namespace EDC2015_G1_Project
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            local1 = "Refeitório de Santiago";    
+            //local1 = "Refeitório de Santiago";
+            Santiago_Click(sender, e);
         }
 
         //protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)

@@ -201,12 +201,24 @@
     <Content Include="refeitorioSantiago.aspx" />
     <Content Include="restauranteUniversitario.aspx" />
     <Content Include="snackSelf.aspx" />
+    <Content Include="Trans\almocoCrasto.xslt" />
+    <Content Include="Trans\almocoEsan.xslt" />
+    <Content Include="Trans\almocoEstga.xslt" />
+    <Content Include="Trans\almocoSantiago.xslt" />
+    <Content Include="Trans\almocoSnack.xslt" />
+    <Content Include="Trans\almocoUniversitario.xslt" />
+    <Content Include="Trans\jantarCrasto.xslt" />
+    <Content Include="Trans\jantarEsan.xslt" />
+    <Content Include="Trans\jantarEstga.xslt" />
+    <Content Include="Trans\jantarSantiago.xslt" />
+    <Content Include="Trans\jantarSnack.xslt" />
+    <Content Include="Trans\jantarUniversitario.xslt" />
+    <Content Include="Trans\menuParse.xslt" />
     <Content Include="XML\ementas.day.all.xml" />
     <Content Include="XML\ementas.week.all.xml" />
     <Content Include="XML\ementas.xslt" />
-    <Content Include="XML\menuParse.xml" />
-    <Content Include="XML\menuParse.xslt" />
     <Content Include="XML\reservas.xml" />
+    <Content Include="XML\reservas_old.xml" />
     <Content Include="XML\reservas.xslt" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Img\campusUA.jpg" />
@@ -501,7 +513,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>4606</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

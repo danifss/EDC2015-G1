@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<reservas>
+  <Santiago>
+    <Almoco>
+      <reserva>
+        <userId>daniel.silva@ua.pt</userId>
+        <cantina>Refeitório de Santiago</cantina>
+        <date>Wed, 16 Dec 2015 02:34:54 GMT</date>
+        <weekDay>Wednesday</weekDay>
+        <numberSeats>1</numberSeats>
+      </reserva>
+      <reserva>
+        <userId>daniel.silva@ua.pt</userId>
+        <cantina>Refeitório de Santiago</cantina>
+        <date>Wed, 16 Dec 2015 02:40:10 GMT</date>
+        <weekDay>Wednesday</weekDay>
+        <numberSeats>3</numberSeats>
+      </reserva>
+      <reserva>
+        <userId>daniel.silva@ua.pt</userId>
+        <cantina>Refeitório de Santiago</cantina>
+        <date>Wed, 16 Dec 2015 02:48:04 GMT</date>
+        <weekDay>Wednesday</weekDay>
+        <numberSeats>5</numberSeats>
+      </reserva>
+    </Almoco>
+    <Jantar>
+      <reserva>
+        <userId>daniel.silva@ua.pt</userId>
+        <cantina>Refeitório de Santiago</cantina>
+        <date>Wed, 16 Dec 2015 02:34:54 GMT</date>
+        <weekDay>Wednesday</weekDay>
+        <numberSeats>1</numberSeats>
+      </reserva>
+      <reserva>
+        <userId>daniel.silva@ua.pt</userId>
+        <cantina>Refeitório de Santiago</cantina>
+        <date>Wed, 16 Dec 2015 02:40:10 GMT</date>
+        <weekDay>Wednesday</weekDay>
+        <numberSeats>3</numberSeats>
+      </reserva>
+    </Jantar>
+  </Santiago>
+  <!-- ########## -->
+  <Crasto>
+    <Almoco>
+    </Almoco>
+    <Jantar>
+    </Jantar>
+  </Crasto>
+  <!-- ########## -->
+  <SnackBar>
+    <Almoco>
+      <reserva>
+        <userId>daniel.silva@ua.pt</userId>
+        <cantina>Snack-Bar/Self</cantina>
+        <date>Tue, 15 Dec 2015 22:05:05 GMT</date>
+        <weekDay>Tuesday</weekDay>
+        <numberSeats>10</numberSeats>
+      </reserva>
+    </Almoco>
+    <Jantar>
+    </Jantar>
+  </SnackBar>
+  <!-- ########## -->
+  <Restaurante>
+    <Almoco>
+    </Almoco>
+    <Jantar>
+    </Jantar>
+  </Restaurante>
+  <!-- ########## -->
+  <ESTGA>
+    <Almoco>
+    </Almoco>
+    <Jantar>
+    </Jantar>
+  </ESTGA>
+  <!-- ########## -->
+  <ESAN>
+    <Almoco>
+    </Almoco>
+    <Jantar>
+    </Jantar>
+  </ESAN>
+</reservas>

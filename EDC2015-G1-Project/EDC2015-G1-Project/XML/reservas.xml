@@ -1,86 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <reservas>
-  <Santiago>
-    <Almoco>
-      <reserva>
-        <userId>e5edf701-4179-4796-9e4c-a3d916e7175e</userId>
-        <date>Tue, 15 Dec 2015 22:01:30 GMT</date>
-        <weekDay>Tuesday</weekDay>
-        <numberSeats>5</numberSeats>
-      </reserva>
-      <reserva>
-        <userId>e5edf701-4179-4796-9e4c-a3d916e7175e</userId>
-        <date>Tue, 15 Dec 2015 22:05:05 GMT</date>
-        <weekDay>Tuesday</weekDay>
-        <numberSeats>10</numberSeats>
-      </reserva>
-      <reserva>
-        <userId>e5edf701-4179-4796-9e4c-a3d916e7175e</userId>
-        <date>Tue, 15 Dec 2015 22:24:37 GMT</date>
-        <weekDay>Tuesday</weekDay>
-        <numberSeats>7</numberSeats>
-      </reserva>
-      <reserva>
-        <userId>e5edf701-4179-4796-9e4c-a3d916e7175e</userId>
-        <date>Tue, 15 Dec 2015 22:25:47 GMT</date>
-        <weekDay>Tuesday</weekDay>
-        <numberSeats>1</numberSeats>
-      </reserva>
-    </Almoco>
-    <Jantar>
-      <reserva>
-        <userId>e5edf701-4179-4796-9e4c-a3d916e7175e</userId>
-        <date>Tue, 15 Dec 2015 22:05:05 GMT</date>
-        <weekDay>Tuesday</weekDay>
-        <numberSeats>10</numberSeats>
-      </reserva>
-      <reserva>
-        <userId>e5edf701-4179-4796-9e4c-a3d916e7175e</userId>
-        <date>Tue, 15 Dec 2015 22:28:14 GMT</date>
-        <weekDay>Tuesday</weekDay>
-        <numberSeats>3</numberSeats>
-      </reserva>
-    </Jantar>
-  </Santiago>
-  <!-- ########## -->
-  <Crasto>
-    <Almoco>
-    </Almoco>
-    <Jantar>
-    </Jantar>
-  </Crasto>
-  <!-- ########## -->
-  <SnackBar>
-    <Almoco>
-      <reserva>
-        <userId>e5edf701-4179-4796-9e4c-a3d916e7175e</userId>
-        <date>Tue, 15 Dec 2015 22:05:05 GMT</date>
-        <weekDay>Tuesday</weekDay>
-        <numberSeats>10</numberSeats>
-      </reserva>
-    </Almoco>
-    <Jantar>
-    </Jantar>
-  </SnackBar>
-  <!-- ########## -->
-  <Restaurante>
-    <Almoco>
-    </Almoco>
-    <Jantar>
-    </Jantar>
-  </Restaurante>
-  <!-- ########## -->
-  <ESTGA>
-    <Almoco>
-    </Almoco>
-    <Jantar>
-    </Jantar>
-  </ESTGA>
-  <!-- ########## -->
-  <ESAN>
-    <Almoco>
-    </Almoco>
-    <Jantar>
-    </Jantar>
-  </ESAN>
+  <reserva>
+    <id>1</id>
+    <userId>daniel.silva@ua.pt</userId>
+    <cantina>Refeitório de Santiago</cantina>
+    <meal>Almoço</meal>
+    <date>Wed, 16 Dec 2015 07:07:22 GMT</date>
+    <weekDay>Wednesday</weekDay>
+    <numberSeats>4</numberSeats>
+  </reserva>
+  <reserva>
+    <id>2</id>
+    <userId>daniel.silva@ua.pt</userId>
+    <cantina>Refeitório de Santiago</cantina>
+    <meal>Jantar</meal>
+    <date>Wed, 16 Dec 2015 07:07:22 GMT</date>
+    <weekDay>Wednesday</weekDay>
+    <numberSeats>4</numberSeats>
+  </reserva>
+  <reserva>
+    <id>3</id>
+    <userId>daniel.silva@ua.pt</userId>
+    <cantina>Refeitório ESAN</cantina>
+    <meal>Almoço</meal>
+    <date>Wed, 16 Dec 2015 07:07:35 GMT</date>
+    <weekDay>Wednesday</weekDay>
+    <numberSeats>2</numberSeats>
+  </reserva>
+  <reserva>
+    <id>4</id>
+    <userId>daniel.silva@ua.pt</userId>
+    <cantina>Refeitório do Crasto</cantina>
+    <meal>Almoço</meal>
+    <date>Wed, 16 Dec 2015 07:08:11 GMT</date>
+    <weekDay>Wednesday</weekDay>
+    <numberSeats>1</numberSeats>
+  </reserva>
+  <reserva>
+    <id>5</id>
+    <userId>daniel.silva@ua.pt</userId>
+    <cantina>Refeitório de Santiago</cantina>
+    <meal>Jantar</meal>
+    <date>Wed, 16 Dec 2015 07:08:20 GMT</date>
+    <weekDay>Wednesday</weekDay>
+    <numberSeats>10</numberSeats>
+  </reserva>
+  <reserva>
+    <id>6</id>
+    <userId>daniel.silva@ua.pt</userId>
+    <cantina>Snack-Bar/Self</cantina>
+    <meal>Jantar</meal>
+    <date>Wed, 16 Dec 2015 07:08:26 GMT</date>
+    <weekDay>Wednesday</weekDay>
+    <numberSeats>1</numberSeats>
+  </reserva>
+  <reserva>
+    <id>7</id>
+    <userId>daniel.silva@ua.pt</userId>
+    <cantina>Refeitório ESTGA</cantina>
+    <meal>Almoço</meal>
+    <date>Wed, 16 Dec 2015 07:08:31 GMT</date>
+    <weekDay>Wednesday</weekDay>
+    <numberSeats>6</numberSeats>
+  </reserva>
 </reservas>

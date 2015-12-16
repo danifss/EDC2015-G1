@@ -1,8 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl"
->
+    xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
+  
   <xsl:output method="xml" indent="yes"/>
+  <xsl:template match="/reservas">
+    <reservas>
+      <xsl:for-each select="reserva">
+        <reserva>
+          <xsl:attribute name="ID">
+            <xsl:value-of select="id"/>
+          </xsl:attribute>
+          <xsl:attribute name="Username">
+            <xsl:value-of select="userId"/>
+          </xsl:attribute>
+          <xsl:attribute name="Cantina">
+            <xsl:value-of select="cantina"/>
+          </xsl:attribute>
+          <xsl:attribute name="Refeicao">
+            <xsl:value-of select="meal"/>
+          </xsl:attribute>
+          <xsl:attribute name="Data">
+            <xsl:value-of select="date"/>
+          </xsl:attribute>
+          <xsl:attribute name="Dia">
+            <xsl:value-of select="weekDay"/>
+          </xsl:attribute>
+          <xsl:attribute name="Lugares">
+            <xsl:value-of select="numberSeats"/>
+          </xsl:attribute>
+        </reserva>
+      </xsl:for-each>
+    </reservas>
+  </xsl:template>
+  
+  
+<!--
   <xsl:template match="/reservas">
     <reservas>
       <xsl:for-each select="Santiago">
@@ -253,4 +285,5 @@
     </reservas>
       
   </xsl:template>
+-->
 </xsl:stylesheet>
