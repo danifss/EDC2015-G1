@@ -13,68 +13,87 @@ namespace EDC2015_G1_Project
 {
     public partial class menuDay : System.Web.UI.Page
     {
-        result ementas;
+           String local1;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            ////string inputUrl = "http://services.web.ua.pt/sas/ementas?date=day&place=all";
-            //string inputUrl = @"C:\ementas.day.all.xml";
-            //XmlDocument xml = new XmlDocument();
-            //xml.Load(inputUrl);
-            //string inputString = xml.InnerXml;
-            ////string xmlText = File.ReadAllText(inputUrl);
-
-            //try
-            //{
-            //    XmlSerializer serializer = new XmlSerializer(typeof(result));
-            //    StringReader rdr = new StringReader(inputString);
-            //    ementas = (result)serializer.Deserialize(rdr);
-            //}
-            //catch (Exception ex)
-            //{
-            //    Console.WriteLine(ex.StackTrace);
-            //    throw ex;
-            //}
+            local1 = "Refeitório de Santiago";    
         }
 
-        protected void FormViewSantiago_Load(object sender, EventArgs e)
+        //protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //       if(DropDownList1.SelectedValue == "Almoço")
+        //    {
+        //        ementasByDay.XPath = "result/menu[@canteen = '"+local1+"' and @meal='Almoço']/items";
+        //    }
+        //    else
+        //    {
+        //        ementasByDay.XPath = "result/menu[@canteen = '" + local1 + "' and @meal='Jantar']/items";
+        //    }
+        //    DetailsView1.DataBind();
+        //}
+
+        protected void Santiago_Click(object sender, EventArgs e)
         {
-            //XmlDocument xml = new XmlDocument();
-            ////xml.Load("http://services.web.ua.pt/sas/ementas?date=day&place=all");
-            //xml.Load("C:/ementas.day.all.xml");
+            local1 = "Refeitório de Santiago";
+            ementasByDayAlmocoSantiago.XPath = "result/menu[@canteen = '" + local1 + "' and @meal='Almoço']/items";
+            DetailsView1.DataSourceID = "ementasByDayAlmocoSantiago";
+            ementasByDayJantarSantiago.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
+            DetailsView2.DataSourceID = "ementasByDayJantarSantiago";
+            Bar.ImageUrl = "Img/santiago.jpg";
+        }
 
-            //List<string> attributes = new List<string>();
+        protected void Crasto_Click(object sender, EventArgs e)
+        {
+            local1 = "Refeitório do Crasto";
+            DetailsView1.DataSourceID = "ementasByDayAlmocoCrasto";
+            ementasByDayAlmocoCrasto.XPath = "result/menu[@canteen = '" + local1+ "' and @meal='Almoço']/items";
+            DetailsView2.DataSourceID = "ementasByDayJantarCrasto";
+            jantar.Visible=false;
+            ementasByDayJantarCrasto.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
+            Bar.ImageUrl = "Img/refeitorioCrasto.jpg";
+        }
 
-            //XmlNode node = xml.DocumentElement.SelectSingleNode("/result");
+        protected void Restaurante_Click(object sender, EventArgs e)
+        {
+            local1 = "Restaurante Universitário";
+            DetailsView1.DataSourceID = "ementasByDayAlmocoUniversitario";
+            ementasByDayAlmocoUniversitario.XPath = "result/menu[@canteen = '" + local1 + "' and @meal='Almoço']/items";
+            DetailsView2.DataSourceID = "ementasByDayJantarUniversitario";
+            ementasByDayJantarUniversitario.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
+            Bar.ImageUrl = "Img/universitario.jpg";
+        }
 
-            //List<Dictionary<string, string>> menusAttr = new List<Dictionary<string, string>>(node.ChildNodes.Count);
+        protected void Snack_Click(object sender, EventArgs e)
+        {
+            local1 = "Snack-Bar/Self";
+            DetailsView1.DataSourceID = "ementasByDayAlmocoSnack";
+            ementasByDayAlmocoSnack.XPath = "result/menu[@canteen = '" + local1 + "' and @meal='Almoço']/items";
+            DetailsView2.DataSourceID = "ementasByDayJantarSnack";
+            jantar.Visible = false;
+            ementasByDayJantarSnack.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
+            Bar.ImageUrl = "Img/snack.jpg";
+        }
 
-            ////string cenas = node.Attributes["zone"].Value.ToString();
-            ////ClientScript.RegisterStartupScript(this.GetType(), "Debug", "alert('" + cenas + "');", true);
-            //for (int i = 0; i < node.ChildNodes.Count; i++)
-            //{
-            //    XmlNode subNode = node.ChildNodes[i];
-            //    if (subNode.Attributes["zone"].Value.Equals("santiago"))
-            //    {
-            //        int j = 0;
-            //        foreach (XmlElement n in subNode.ChildNodes)
-            //        {
-            //            XmlAttributeCollection atributos = n.Attributes;
-            //            menusAttr.Add(new Dictionary<string, string>());
-            //            foreach (XmlAttribute at in atributos)
-            //            {
-            //                //if (at.LocalName.Contains("meal")){
-            //                menusAttr[j].Add(at.Name, at.Value);
-            //                attributes.Add(at.Value);
-            //                //}
-            //            }
-            //            j++;
-            //        }
-            //    }
-            //}
+        protected void ESTGA_Click(object sender, EventArgs e)
+        {
+            local1 = "Refeitório ESTGA";
+            DetailsView1.DataSourceID = "ementasByDayAlmocoEstga";
+            ementasByDayAlmocoEstga.XPath = "result/menu[@canteen = '" + local1 + "' and @meal='Almoço']/items";
+            DetailsView2.DataSourceID = "ementasByDayJantarEstga";
+            ementasByDayJantarEstga.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
+            Bar.ImageUrl = "Img/refeitorioEstga.jpg";
+        }
 
-            //FormViewSantiago.DataSource = menusAttr;
-            //FormViewSantiago.DataBind();
+        protected void ESAN_Click(object sender, EventArgs e)
+        {
+            local1 = "Refeitório ESAN";
+            DetailsView1.DataSourceID = "ementasByDayAlmocoEsan";
+            ementasByDayAlmocoEsan.XPath = "result/menu[@canteen = '" + local1 + "' and @meal='Almoço']/items";
+            DetailsView2.DataSourceID = "ementasByDayJantarEsan";
+            jantar.Visible = false;
+            ementasByDayJantarEsan.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
+            Bar.ImageUrl = "Img/esan.jpg";
         }
     }
 }
