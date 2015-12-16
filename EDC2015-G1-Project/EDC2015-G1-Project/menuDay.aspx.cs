@@ -17,7 +17,14 @@ namespace EDC2015_G1_Project
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            local1 = "Refeitório de Santiago";    
+            local1 = "Refeitório de Santiago";
+            ementasByDayAlmocoSantiago.XPath = "result/menu[@canteen = '" + local1 + "' and @meal='Almoço']/items";
+            DetailsView1.DataSourceID = "ementasByDayAlmocoSantiago";
+            ementasByDayJantarSantiago.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
+            jantar.Visible = true;
+            DetailsView2.DataSourceID = "ementasByDayJantarSantiago";
+            Image1.ImageUrl = "Img/refeitorioSantiago.jpg";
+
         }
 
         //protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
@@ -39,8 +46,10 @@ namespace EDC2015_G1_Project
             ementasByDayAlmocoSantiago.XPath = "result/menu[@canteen = '" + local1 + "' and @meal='Almoço']/items";
             DetailsView1.DataSourceID = "ementasByDayAlmocoSantiago";
             ementasByDayJantarSantiago.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
+            jantar.Visible = true;
             DetailsView2.DataSourceID = "ementasByDayJantarSantiago";
-            Bar.ImageUrl = "Img/santiago.jpg";
+            Image1.ImageUrl = "Img/refeitorioSantiago.jpg";
+            //Image2.ImageUrl = "Img/refeitorioSantiago.jpg";
         }
 
         protected void Crasto_Click(object sender, EventArgs e)
@@ -49,9 +58,10 @@ namespace EDC2015_G1_Project
             DetailsView1.DataSourceID = "ementasByDayAlmocoCrasto";
             ementasByDayAlmocoCrasto.XPath = "result/menu[@canteen = '" + local1+ "' and @meal='Almoço']/items";
             DetailsView2.DataSourceID = "ementasByDayJantarCrasto";
-            jantar.Visible=false;
+            jantar.Visible=true;
             ementasByDayJantarCrasto.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
-            Bar.ImageUrl = "Img/refeitorioCrasto.jpg";
+            Image1.ImageUrl = "Img/crasto.jpg";
+            //Image2.ImageUrl = "Img/refeitorioCrasto.jpg";
         }
 
         protected void Restaurante_Click(object sender, EventArgs e)
@@ -59,9 +69,11 @@ namespace EDC2015_G1_Project
             local1 = "Restaurante Universitário";
             DetailsView1.DataSourceID = "ementasByDayAlmocoUniversitario";
             ementasByDayAlmocoUniversitario.XPath = "result/menu[@canteen = '" + local1 + "' and @meal='Almoço']/items";
+            jantar.Visible = false;
             DetailsView2.DataSourceID = "ementasByDayJantarUniversitario";
             ementasByDayJantarUniversitario.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
-            Bar.ImageUrl = "Img/universitario.jpg";
+            Image1.ImageUrl = "Img/universitario.jpg";
+            //Image2.ImageUrl = "Img/restauranteUniversitario.jpg";
         }
 
         protected void Snack_Click(object sender, EventArgs e)
@@ -72,7 +84,8 @@ namespace EDC2015_G1_Project
             DetailsView2.DataSourceID = "ementasByDayJantarSnack";
             jantar.Visible = false;
             ementasByDayJantarSnack.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
-            Bar.ImageUrl = "Img/snack.jpg";
+            Image1.ImageUrl = "Img/snack.jpg";
+            //Image2.ImageUrl = "Img/refeitorioSnack.jpg";
         }
 
         protected void ESTGA_Click(object sender, EventArgs e)
@@ -80,9 +93,11 @@ namespace EDC2015_G1_Project
             local1 = "Refeitório ESTGA";
             DetailsView1.DataSourceID = "ementasByDayAlmocoEstga";
             ementasByDayAlmocoEstga.XPath = "result/menu[@canteen = '" + local1 + "' and @meal='Almoço']/items";
+            jantar.Visible = true;
             DetailsView2.DataSourceID = "ementasByDayJantarEstga";
             ementasByDayJantarEstga.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
-            Bar.ImageUrl = "Img/refeitorioEstga.jpg";
+            Image1.ImageUrl = "Img/estga.jpg";
+            //Image2.ImageUrl = "Img/refeitorioEstga.jpg";
         }
 
         protected void ESAN_Click(object sender, EventArgs e)
@@ -91,9 +106,10 @@ namespace EDC2015_G1_Project
             DetailsView1.DataSourceID = "ementasByDayAlmocoEsan";
             ementasByDayAlmocoEsan.XPath = "result/menu[@canteen = '" + local1 + "' and @meal='Almoço']/items";
             DetailsView2.DataSourceID = "ementasByDayJantarEsan";
-            jantar.Visible = false;
+            jantar.Visible = true;
             ementasByDayJantarEsan.XPath = "result/menu[@canteen = '" + local1 + "'and @meal='Jantar']/items";
-            Bar.ImageUrl = "Img/esan.jpg";
+            Image1.ImageUrl = "Img/esan.jpg";
+            //Image2.ImageUrl = "Img/esan2.jpg";
         }
     }
 }

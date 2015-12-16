@@ -19,10 +19,10 @@
                     <xsl:value-of select="item[@name='Sopa']" />
                   </xsl:attribute>
                   <xsl:attribute name="Carne">
-                    <xsl:value-of select="item[@name='Prato normal carne']" />
+                    <xsl:value-of select="item[@name='Prato de carne']" />
                   </xsl:attribute>
                   <xsl:attribute name="Peixe">
-                    <xsl:value-of select="item[@name='Prato normal peixe']" />
+                    <xsl:value-of select="item[@name='Prato de peixe']" />
                   </xsl:attribute>
                   <xsl:attribute name="Dieta">
                     <xsl:value-of select="item[@name='Prato dieta']" />

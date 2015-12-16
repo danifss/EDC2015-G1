@@ -76,6 +76,15 @@ namespace EDC2015_G1_Project {
         protected global::System.Web.UI.WebControls.Label local;
         
         /// <summary>
+        /// Image1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image1;
+        
+        /// <summary>
         /// almoco control.
         /// </summary>
         /// <remarks>
@@ -112,13 +121,22 @@ namespace EDC2015_G1_Project {
         protected global::System.Web.UI.WebControls.DetailsView DetailsView2;
         
         /// <summary>
-        /// Bar control.
+        /// ementasByDayAlmoco control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Bar;
+        protected global::System.Web.UI.WebControls.XmlDataSource ementasByDayAlmoco;
+        
+        /// <summary>
+        /// ementasByDayJantar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.XmlDataSource ementasByDayJantar;
         
         /// <summary>
         /// ementasByDayAlmocoSantiago control.
