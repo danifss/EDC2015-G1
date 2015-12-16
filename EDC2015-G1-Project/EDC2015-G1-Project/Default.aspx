@@ -13,7 +13,7 @@
             </div>
         </div>
       
-        <img src="Img/sasua625x.jpg" width="100%"/>
+        <img src="Img/aveiro1.jpg" width="100%"/>
     </div>
   
 </asp:Content>

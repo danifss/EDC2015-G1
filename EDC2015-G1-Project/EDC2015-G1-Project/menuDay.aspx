@@ -13,33 +13,30 @@
             <%--<li class="disabled"><a>All Places</a></li>--%>
         </ul>
     </div>
-
+    
     <asp:Label runat="server" ID="local" Visible="false"></asp:Label>
 
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade active in" id="santiago">
             <div class="row">
-                <div class ="col-xs-1"></div>
-                <div class="col-xs-5">
-               <%-- <asp:DropDownList AutoPostBack="true" ID="DropDownList1" runat="server" CssClass="form-control" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
-                    <asp:ListItem Text="Almoço" Value="Almoço"  />
-                    <asp:ListItem Text="Jantar" Value="Jantar" />
-                </asp:DropDownList>--%>
-                   <b><asp:Label ID="almoco" runat="server" Text="Almoço"></asp:Label></b>   
+                <%--<div class ="col-xs-1"></div>--%>
+                <div class="col-xs-4">
                     <br />             
-                   <asp:DetailsView  ID="DetailsView1" runat="server" AutoGenerateRows="True" DataSourceID="ementasByDayAlmocoSantiago" Height="50px" Width="427px">
-
-                    </asp:DetailsView>
-                    <br />
-                    <b><asp:Label ID="jantar" runat="server" Text="Jantar"></asp:Label></b>   
-                    <br />
-                    <asp:DetailsView  ID="DetailsView2" runat="server" AutoGenerateRows="True" DataSourceID="ementasByDayJantarSantiago" Height="50px" Width="427px">
-                      
-                    </asp:DetailsView>
-
+                    <asp:Image  runat="server" id="Image1" ImageUrl="Img/campusUA.jpg" Width="100%"/>
+                    <%--<asp:Image  runat="server" id="Image2" ImageUrl="Img/campusUA.jpg" Width="100%"/>--%>
                 </div>
-                <div class="col-xs-6">
-                    <asp:Image  runat="server" id="Bar" ImageUrl="Img/santiago.jpg" Width="100%" />
+                <div class="col-xs-4">
+                    <b><asp:Label ID="almoco" runat="server" Text="Almoço" Font-Size="Medium"></asp:Label></b>   
+                    <br />             
+                    <asp:DetailsView RowStyle-BorderColor="Black" RowStyle-BackColor="#ccccff"  CssClass="table table-bordered table-condensed table-responsive" ID="DetailsView1" runat="server" AutoGenerateRows="True" DataSourceID="ementasByDayAlmoco" Height="50px" Width="427px">
+                    </asp:DetailsView>
+                    <br />
+                 </div>
+                 <div class="col-xs-4">
+                    <b><asp:Label ID="jantar" runat="server" Text="Jantar" Font-Size="Medium" ></asp:Label></b>   
+                    <br />
+                    <asp:DetailsView RowStyle-BorderColor="Black" RowStyle-BackColor="#ccccff" CssClass="table table-bordered table-condensed table-responsive" ID="DetailsView2" runat="server" AutoGenerateRows="True" DataSourceID="ementasByDayJantar" Height="50px" Width="427px">
+                    </asp:DetailsView>
                 </div>
             </div>
         </div>
@@ -71,6 +68,9 @@
     </div>
 
 
+    <asp:XmlDataSource ID="ementasByDayAlmoco" runat="server" DataFile="~/XML/ementas.day.all.xml" TransformFile="~/Trans/almocoSantiago.xslt" />
+    <asp:XmlDataSource ID="ementasByDayJantar" runat="server" DataFile="~/XML/ementas.day.all.xml" TransformFile="~/Trans/jantarSantiago.xslt" />
+
 
     <asp:XmlDataSource ID="ementasByDayAlmocoSantiago" runat="server" DataFile="~/XML/ementas.day.all.xml" TransformFile="~/Trans/almocoSantiago.xslt" />
     <asp:XmlDataSource ID="ementasByDayJantarSantiago" runat="server" DataFile="~/XML/ementas.day.all.xml" TransformFile="~/Trans/jantarSantiago.xslt" />
@@ -86,7 +86,7 @@
 
     <asp:XmlDataSource ID="ementasByDayAlmocoEstga" runat="server" DataFile="~/XML/ementas.day.all.xml" TransformFile="~/Trans/almocoEstga.xslt" />
     <asp:XmlDataSource ID="ementasByDayJantarEstga" runat="server" DataFile="~/XML/ementas.day.all.xml" TransformFile="~/Trans/jantarEstga.xslt" />
-
+    
     <asp:XmlDataSource ID="ementasByDayAlmocoEsan" runat="server" DataFile="~/XML/ementas.day.all.xml" TransformFile="~/Trans/almocoEsan.xslt" />
     <asp:XmlDataSource ID="ementasByDayJantarEsan" runat="server" DataFile="~/XML/ementas.day.all.xml" TransformFile="~/Trans/jantarEsan.xslt" />
 

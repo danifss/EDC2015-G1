@@ -19,22 +19,16 @@
                     <xsl:value-of select="item[@name='Sopa']" />
                   </xsl:attribute>
                   <xsl:attribute name="Carne">
-                    <xsl:value-of select="item[@name='Prato normal carne']" />
+                    <xsl:value-of select="item[@name='Prato carne']" />
                   </xsl:attribute>
                   <xsl:attribute name="Peixe">
-                    <xsl:value-of select="item[@name='Prato normal peixe']" />
+                    <xsl:value-of select="item[@name='Prato peixe']" />
                   </xsl:attribute>
-                  <xsl:attribute name="Dieta">
-                    <xsl:value-of select="item[@name='Prato dieta']" />
-                  </xsl:attribute>
-                  <xsl:attribute name="Vegetariano">
-                    <xsl:value-of select="item[@name='Prato vegetariano']" />
-                  </xsl:attribute>
-                  <xsl:attribute name="Opçao">
+                 <xsl:attribute name="Opçao">
                     <xsl:value-of select="item[@name='Prato opção']" />
                   </xsl:attribute>
                   <xsl:attribute name="Salada">
-                    <xsl:value-of select="item[@name='Salada']" />
+                    <xsl:value-of select="item[@name='Buffet de saladas']" />
                   </xsl:attribute>
                   <xsl:attribute name="Diversos">
                     <xsl:value-of select="item[@name='Diversos']" />
@@ -42,7 +36,10 @@
                   <xsl:attribute name="Sobremesa">
                     <xsl:value-of select="item[@name='Sobremesa']" />
                   </xsl:attribute>
-                 </items>
+                  <xsl:attribute name="Bebidas">
+                    <xsl:value-of select="item[@name='Bebidas']" />
+                  </xsl:attribute>
+                </items>
               </xsl:for-each>
             </menu>
           </xsl:for-each>
