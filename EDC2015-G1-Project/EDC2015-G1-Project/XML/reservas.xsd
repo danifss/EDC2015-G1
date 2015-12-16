@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="reservas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Santiago">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Almoco">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="reserva">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="userId" type="xs:string" />
+                          <xs:element name="date" type="xs:string" />
+                          <xs:element name="weekDay" type="xs:string" />
+                          <xs:element name="numberSeats" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Jantar">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="reserva">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="userId" type="xs:string" />
+                          <xs:element name="date" type="xs:string" />
+                          <xs:element name="weekDay" type="xs:string" />
+                          <xs:element name="numberSeats" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Crasto">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Almoco">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="reserva">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="userId" type="xs:string" />
+                          <xs:element name="date" type="xs:string" />
+                          <xs:element name="weekDay" type="xs:string" />
+                          <xs:element name="numberSeats" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Jantar">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="reserva">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="userId" type="xs:string" />
+                          <xs:element name="date" type="xs:string" />
+                          <xs:element name="weekDay" type="xs:string" />
+                          <xs:element name="numberSeats" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SnackBar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Almoco">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="reserva">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="userId" type="xs:string" />
+                          <xs:element name="date" type="xs:string" />
+                          <xs:element name="weekDay" type="xs:string" />
+                          <xs:element name="numberSeats" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Jantar">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="reserva">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="userId" type="xs:string" />
+                          <xs:element name="date" type="xs:string" />
+                          <xs:element name="weekDay" type="xs:string" />
+                          <xs:element name="numberSeats" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Restaurante">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Almoco">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="reserva">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="userId" type="xs:string" />
+                          <xs:element name="date" type="xs:string" />
+                          <xs:element name="weekDay" type="xs:string" />
+                          <xs:element name="numberSeats" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Jantar">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="reserva">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="userId" type="xs:string" />
+                          <xs:element name="date" type="xs:string" />
+                          <xs:element name="weekDay" type="xs:string" />
+                          <xs:element name="numberSeats" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ESTGA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Almoco">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="reserva">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="userId" type="xs:string" />
+                          <xs:element name="date" type="xs:string" />
+                          <xs:element name="weekDay" type="xs:string" />
+                          <xs:element name="numberSeats" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Jantar">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="reserva">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="userId" type="xs:string" />
+                          <xs:element name="date" type="xs:string" />
+                          <xs:element name="weekDay" type="xs:string" />
+                          <xs:element name="numberSeats" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ESAN">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Almoco">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="reserva">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="userId" type="xs:string" />
+                          <xs:element name="date" type="xs:string" />
+                          <xs:element name="weekDay" type="xs:string" />
+                          <xs:element name="numberSeats" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Jantar">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="reserva">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="userId" type="xs:string" />
+                          <xs:element name="date" type="xs:string" />
+                          <xs:element name="weekDay" type="xs:string" />
+                          <xs:element name="numberSeats" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

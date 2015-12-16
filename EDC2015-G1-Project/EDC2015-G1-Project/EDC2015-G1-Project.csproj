@@ -206,6 +206,8 @@
     <Content Include="XML\ementas.xslt" />
     <Content Include="XML\menuParse.xml" />
     <Content Include="XML\menuParse.xslt" />
+    <Content Include="XML\reservas.xml" />
+    <Content Include="XML\reservas.xslt" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Img\campusUA.jpg" />
     <Content Include="Img\sasua625x.jpg" />
@@ -256,6 +258,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="XML\ementas.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XML\reservas.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

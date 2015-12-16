@@ -61,6 +61,6 @@
 
 
 
-    <asp:XmlDataSource ID="ementasByDay" runat="server" DataFile="~/XML/ementas.day.all.xml" TransformFile="~/XML/menuParse.xslt" />
+    <asp:XmlDataSource ID="ementasByDay" runat="server" DataFile="http://services.web.ua.pt/sas/ementas?date=day&place=all" TransformFile="~/XML/menuParse.xslt" />
 
 </asp:Content>

@@ -14,9 +14,18 @@
     </div>
 
     <div id="myTabContent" class="tab-content">
+        
         <div class="tab-pane fade active in" id="santiago">
             <div class="row">
                 <div class="col-xs-8">
+
+                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-striped table-hover table-condensed" AutoGenerateColumns="False" DataSourceID="ementasByDay">
+                        <Columns>
+                            <asp:BoundField DataField="cantina" HeaderText="cantina" SortExpression="cantina" />
+                            <asp:BoundField DataField="sopa" HeaderText="sopa" SortExpression="sopa" />
+                        </Columns>
+                    </asp:GridView>
+
                 </div>
                 <div class="col-xs-4">
                     <img src="Img/santiago.jpg" width="100%" />
@@ -79,4 +88,8 @@
             </div>
         </div>
     </div>
+
+
+    <asp:XmlDataSource ID="ementasByDay" runat="server" DataFile="http://services.web.ua.pt/sas/ementas?date=week&place=all" TransformFile="~/XML/menuParse.xslt" />
+
 </asp:Content>
